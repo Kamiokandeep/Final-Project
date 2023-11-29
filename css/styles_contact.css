@@ -1,0 +1,66 @@
+section {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0px 13px 0px 10px #585794;
+    -webkit-box-shadow: 0px 13px 0px 10px #585794; 
+}
+
+section > center > h1 {
+    font-weight: 100;
+    font-size: 90px;
+}
+
+section > center > p {
+    color: #585794 !important;
+    padding-bottom: 10px;
+}
+
+.formContact {
+    width: 50%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=text], input[type=number], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.checkBoxLabel {
+    margin-right: 50px;
+}
+
+#checkboxDIV {
+    display: flex;
+    margin-top: 2%;
+}
+
+button {
+    line-height: 3;
+    width: 25%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    border: #585794;
+    text-align: center; 
+    justify-content: center;
+    background-color: #585794;
+    border-radius: 10px;
+}
+
+button > p {
+    color: white;
+}

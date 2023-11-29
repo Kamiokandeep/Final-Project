@@ -1,0 +1,137 @@
+section{
+    margin-top: 10%;
+}
+
+#banner {
+    height: 600px;
+    width: 100%;
+    object-fit:cover;
+}
+
+.info-panel {
+    width: 600px;
+    padding: 2rem;
+    margin-top: -5%;
+    margin-left: 35%;
+    position: relative;
+    border-radius: 10px;
+    color: rgb(72, 72, 72);
+    background: white !important;
+    box-shadow: 0px 20px 0px 8px #585794;
+    -webkit-box-shadow: 0px 20px 0px 8px #585794; 
+}
+
+.info-panel-2 {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.timeline {
+    margin: 0;
+    margin-top: 5%;
+    display: flex;
+}
+
+.timeline > ul {
+    flex-direction: column;
+}
+
+.timeline > ul > p {
+    height: 50px;
+    padding: 5px;
+    width: 450px;
+}
+
+.imageHistory {
+    border-radius: 15px;
+    width: 200px;
+}
+
+/* Carrousel */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    margin-left: 15%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    margin-right: 3%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: -2%;
+    margin-right: 20%;
+    opacity: .5;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #585794;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#bannerTimeLine {
+    margin-top: 3%; 
+    background-color: #D9D9D9; 
+    height: 380px; 
+    padding-top: .5px;
+}
+
+#gameboyInfo{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    border-radius: 10%;
+    background-color: white;
+    -webkit-box-shadow: 0px 13px 0px 10px #585794; 
+    box-shadow: 0px 13px 0px 10px #585794;
+}
+
+#gameboyInfo > #panelGameboy > h2 {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#gameboyInfo > #panelGameboy > p {
+    margin: auto;
+    padding: 45px;
+}
+
+#gameboyInfo > img {
+    width: 500px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
