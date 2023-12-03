@@ -5,7 +5,7 @@ body {
     justify-content: center;
 }
 
-/* */
+/* Top styles */
 .container-main {
     text-align: center;
 }
@@ -21,21 +21,23 @@ img {
     box-shadow: 20px 10px 40px #585794;
 }
 
-/* */
+/* Medium styles */
 .flex-container {
     width: 75%;
+    max-width: 1600px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
 }
 
 .flex-container > div {
+    width: 48%;
     background-color: #ffffff;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-    flex: 1;
+    flex: auto;
     box-shadow: 20px 10px 40px #585794;
 }
 
@@ -60,4 +62,27 @@ p {
 
 .img_game_banner {
     padding-top: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container > div {
+        width: 100%;
+    }
+
+    img {
+        max-width: 72%;
+        height: auto;
+    }
+
+    .img_main {
+        padding-top: 28%;
+    }
+
+    H2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
