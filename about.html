@@ -10,19 +10,31 @@
         href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>GAME BOY</title>
 </head>
 
 <body>
     <div id="navbar">
         <div id="elementNavbar">
-            <img id="logo" src="img/MasterPage/Logo Gameboy.png" alt="Logo GAME BOY">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="product.html">PRODUCTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <ul id="logo">
+                <li><a href="index.html"><img id="logoIMG" src="img/MasterPage/Logo Gameboy.png" alt="Logo GAME BOY"></a></li>
             </ul>
+            <ul id="Menu">
+                <li><a href="index.html"><p>HOME</p></a></li>
+                <li><a href="about.html"><p>ABOUT</p></a></li>
+                <li><a href="product.html"><p>PRODUCTS</p></a></li>
+                <li><a href="contact.html"><p>CONTACT</p></a></li>
+            </ul>
+            <ul id="MenuCollapse">
+                <li><button id="SwitchButton" onclick="cambiarPropiedad()"><i class="fa fa-bars"></i></button></li>
+            </ul>
+        </div>
+        <div id="toggleMenu">
+            <a class="optionToggle" href="index.html"><p>HOME</p></a>
+            <a class="optionToggle" href="about.html"><p>ABOUT</p></a>
+            <a class="optionToggle" href="product.html"><p>PRODUCTS</p></a>
+            <a class="optionToggle" href="contact.html"><p>CONTACT</p></a>
         </div>
     </div>
     
@@ -126,7 +138,7 @@
         </div>
 
         <div id="gameboyInfo">
-            	<div id="panelGameboy" style="flex-direction: column;">
+            	<div id="panelGameboy">
                     <h2>I AM GAME BOY</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iste iusto mollitia illum vel sunt consectetur possimus omnis?</p>
                 </div>
@@ -134,9 +146,10 @@
         </div>
     </section>
 
-    <br>
-        <br>
-        <br>
+    <footer>
+        <p>© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</p>
+    </footer>
 </body>
 <script src="js/About.js"></script>
+<script src="js/MasterPage.js"></script>
 </html>

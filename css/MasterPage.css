@@ -12,7 +12,11 @@ body {
     background-image: url(../img/MasterPage/bg-decoration.jpeg);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #585794;
     font-weight: 500;
 }
@@ -20,49 +24,208 @@ h1, h2, h3, h4, h5 {
 #navbar {
     top: 0;
     width: 100%;
-    height: 100px;
+    height: auto;
+    display: flex;
+    z-index: 1000;
+    position: fixed;
+    flex-direction: row;
     background-color: #a1a6af;
     box-shadow: 0px 5px 10px #a1a6af;
-    position: fixed;
-    z-index: 1000;
 }
 
 #elementNavbar {
     display: flex;
-    align-items: start;
+    width: 100%;
 }
 
 #logo {
-    left: auto;
+    width: 400px;
+    margin-top: 1.3%;
+    list-style: none;
+    position: relative;
+}
+
+#logoIMG {
+    margin-top: 1%;
     margin-left: 5%;
-    padding: 20px;
     width: 400px;
 }
 
-ul {
+#Menu {
+    width: 100%;
     font-weight: 600;
     margin-top: auto;
-    margin-left: 10%;
     list-style: none;
+    min-width: 1000px;
+    justify-content: end;
     display: inline-flex;
 }
 
-ul > li{
+#Menu > li {
     padding: 50px;
     font-size: 25px;
+    max-height: 130px;
 }
 
-ul > li > a{
+#Menu > li > a {
     text-decoration: none;
+    
+}
+
+
+#Menu > li > a > p {
+    transition: color 0.3s;
     color: #585794 !important;
 }
 
-section{
+#Menu > li > a > p:hover {
+    color: white !important;
+}
+
+#MenuCollapse {
+    width: 100%;
+    margin: auto;
+    display: none;
+    min-width: 10px;
+    margin-top: auto;
+    list-style: none;
+    justify-content: end;
+}
+
+#MenuCollapse > li {
+    padding: 50px;
+    font-size: 25px;
+    max-height: 130px;
+}
+
+#MenuCollapse > li > button {
+    border: 0px;
+    font-size: 30px;
+    margin-right: 100px;
+    background-color: transparent !important;
+}
+
+#MenuCollapse > li > button > i {
+    width: 10%;
+    margin: auto;
+    color: #585794 !important;
+}
+
+@media screen and (max-width: 1300px) {
+    #navbar {
+        height: 130px;
+    }
+
+    #logoIMG {
+        margin-top: 1%;
+        float: left;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+    #Menu > li > a {
+        display: none;
+    }
+
+    #MenuCollapse {
+        display: block;
+    }
+
+    #MenuCollapse > li  {
+        min-width: 500px;
+        margin-left: 80%;
+    }
+
+    #toggleMenu {
+        visibility: hidden;
+    }
+}
+
+#toggleMenu { 
+    top: 129px; 
+    right: 0px; 
+    width: 250px;
+    opacity: 0.8;
+    visibility: hidden;
+    min-height: 100vh;
+    position: absolute;  
+    background-color: #a1a6af;
+}
+
+#toggleMenu > .optionToggle {
+    display: flex;
+    padding: 20px;
+    text-decoration: none ;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#toggleMenu > .optionToggle > p { 
+    color: #585794 !important;
+    font-weight: bolder;
+    color: white;
+}
+
+#Menu > li > a > p {
+    cursor: pointer;
+}
+
+button {
+    margin-top: auto;
+}
+
+section {
     margin-top: 2.5%;
 }
 
 #banner {
     height: 600px;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
+}
+
+footer {
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    margin-top: 5%;
+    background-color: #a1a6af;
+}
+
+footer > p {
+    margin: auto;
+    display: flex;
+    color: #585794;
+    font-weight: 600;
+    line-height: 100px;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1001;
+    position: absolute; */
+}
+
+@media screen and (max-width: 1300px) {
+    footer {
+        margin: 0;
+        min-width: 1200px;
+        height: 100px;
+        margin-top: 5%;
+        background-color: #a1a6af;
+        z-index: 1001;
+        position: absolute;
+    }
+
+    footer > p {
+        left: 55px;
+        margin: auto;
+        display: flex;
+        max-width: 100%;
+        color: #585794;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+    }
 }
