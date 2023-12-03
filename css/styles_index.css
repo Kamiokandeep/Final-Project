@@ -16,8 +16,9 @@ img {
 }
 
 .img_main {
-    padding-top: 5%;
+    padding-top: 8%;
     border-radius: 15px;
+    box-shadow: 20px 10px 40px #585794;
 }
 
 /* */
@@ -35,6 +36,7 @@ img {
     padding: 20px;
     font-size: 30px;
     flex: 1;
+    box-shadow: 20px 10px 40px #585794;
 }
 
 H2 {
