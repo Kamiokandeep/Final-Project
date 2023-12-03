@@ -1,11 +1,13 @@
 section {
     width: 1000px;
-    margin: 0 auto;
+    margin: auto;
+    margin-left: 24%;
+    margin-right: auto;
     margin-top: 10%;
     border-radius: 10%;
     background-color: white;
     box-shadow: 0px 13px 0px 10px #585794;
-    -webkit-box-shadow: 0px 13px 0px 10px #585794; 
+    -webkit-box-shadow: 0px 13px 0px 10px #585794;
 }
 
 section > center > h1 {
@@ -18,15 +20,48 @@ section > center > p {
     padding-bottom: 10px;
 }
 
+
 .formContact {
-    width: 50%;
+    width: 55%;
     margin: auto;
-    display: flex; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-input[type=text], input[type=number], input[type=email], select, textarea {
+@media screen and (max-width: 1400px) {
+    section {
+        width: 800px;
+        min-width: 500px;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-left: 24%;
+        border-radius: 10%;
+        background-color: white;
+        box-shadow: 0px 13px 0px 10px #585794;
+        -webkit-box-shadow: 0px 13px 0px 10px #585794;
+    }
+
+    .formContact {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        margin-top: 5%;
+        margin-left: 24%;
+        min-width: 800px;
+        margin-bottom: 2%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -48,19 +83,55 @@ input[type=checkbox] {
     margin-top: 2%;
 }
 
-button {
+#submitButton {
     line-height: 3;
     width: 25%;
     height: 40px;
     margin: auto;
     display: flex;
+    color: white;
     border: #585794;
-    text-align: center; 
-    justify-content: center;
-    background-color: #585794;
+    text-align: center;
     border-radius: 10px;
+    justify-content: center;
+    background-color: #585794 !important;
 }
 
-button > p {
-    color: white;
+@media screen and (max-width: 1400px) {
+    section {
+        width: 800px;
+        min-width: 500px;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-left: 24%;
+        border-radius: 10%;
+        background-color: white;
+        box-shadow: 0px 13px 0px 10px #585794;
+        -webkit-box-shadow: 0px 13px 0px 10px #585794;
+    }
+
+    .formContact {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        margin-top: 5%;
+        margin-left: 24%;
+        min-width: 800px;
+        margin-bottom: 2%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formContact > #msj {
+        margin-left: 30%;
+    }
+
+    .formContact > #checkboxDIV {
+        margin-left: 30%;
+    }
+
+    #submitButton {
+        margin-top: 5%;
+        margin-left: 40%;
+    }
 }

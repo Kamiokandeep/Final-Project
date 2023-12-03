@@ -10,19 +10,31 @@
         href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>GAME BOY</title>
 </head>
 
 <body>
     <div id="navbar">
         <div id="elementNavbar">
-            <img id="logo" src="img/MasterPage/Logo Gameboy.png" alt="Logo GAME BOY">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="product.html">PRODUCTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <ul id="logo">
+                <li><a href="index.html"><img id="logoIMG" src="img/MasterPage/Logo Gameboy.png" alt="Logo GAME BOY"></a></li>
             </ul>
+            <ul id="Menu">
+                <li><a href="index.html"><p>HOME</p></a></li>
+                <li><a href="about.html"><p>ABOUT</p></a></li>
+                <li><a href="product.html"><p>PRODUCTS</p></a></li>
+                <li><a href="contact.html"><p>CONTACT</p></a></li>
+            </ul>
+            <ul id="MenuCollapse">
+                <li><button id="SwitchButton" onclick="cambiarPropiedad()"><i class="fa fa-bars"></i></button></li>
+            </ul>
+        </div>
+        <div id="toggleMenu">
+            <a class="optionToggle" href="index.html"><p>HOME</p></a>
+            <a class="optionToggle" href="about.html"><p>ABOUT</p></a>
+            <a class="optionToggle" href="product.html"><p>PRODUCTS</p></a>
+            <a class="optionToggle" href="contact.html"><p>CONTACT</p></a>
         </div>
     </div>
 
@@ -32,30 +44,27 @@
             <p>"Connect with Us: Find the Perfect Way to Get in Touch"</p>
         </center>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <div class="formContact">
         <p>First Name</p>
         <input type="text" placeholder="Daniel Alejandro" name="" id="">
     </div>
-    <br>
+
     <div class="formContact">
         <p>Last Name</p>
         <input type="text" placeholder="Pizarro Saavedra" name="" id="">
     </div>
-    <br>
+
     <div class="formContact">
         <p>Phone Number</p>
         <input type="number" placeholder="+1 (123) 546-789" name="" id="">
     </div>
-    <br>
+
     <div class="formContact">
         <p>Email Address</p>
         <input type="email" placeholder="daniel@outlook.com" name="" id="">
     </div>
-    <br>
+    
     <div class="formContact">
         <p>Reason for Contact</p>
         <select name="" id="" placeholder="Select one Reason">
@@ -66,7 +75,6 @@
             <option value="">Reason N° 4</option>
         </select>
     </div>
-    <br>
 
     <div class="formContact">
         <p>Explain your reason</p>
@@ -74,19 +82,17 @@
     </div>
 
     <div class="formContact">
-        <p>How do you want that us connect with you?</p>
+        <p id="msj">How do you want that us connect with you?</p>
         <div id="checkboxDIV">
             <input type="checkbox" name="" id=""><p class="checkBoxLabel">Email address</p>
             <input type="checkbox" name="" id=""><p class="checkBoxLabel">Phone number</p>
         </div>
+
+        <input id="submitButton" type="button" value="Submit"></input>
     </div>
-    <br>
-    <button type="submit" form="form1" value="Submit"><p>Submit</p></button>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <footer>
+        <p>© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</p>
+    </footer>
 </body>
+<script src="js/MasterPage.js"></script>
 </html>
