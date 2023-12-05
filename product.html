@@ -1,42 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/MasterPage.css">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/MasterPage.css" />
+    <link rel="stylesheet" href="css/styles_product.css" />
+    <link rel="stylesheet" href="styles_product.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon-16x16.png"
+    />
     <title>GAME BOY</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="navbar">
-        <div id="elementNavbar">
-            <ul id="logo">
-                <li><a href="index.html"><img id="logoIMG" src="img/MasterPage/Logo Gameboy.png" alt="Logo GAME BOY"></a></li>
-            </ul>
-            <ul id="Menu">
-                <li><a href="index.html"><p>HOME</p></a></li>
-                <li><a href="about.html"><p>ABOUT</p></a></li>
-                <li><a href="product.html"><p>PRODUCTS</p></a></li>
-                <li><a href="contact.html"><p>CONTACT</p></a></li>
-            </ul>
-            <ul id="MenuCollapse">
-                <li><button id="SwitchButton" onclick="cambiarPropiedad()"><i class="fa fa-bars"></i></button></li>
-            </ul>
-        </div>
-        <div id="toggleMenu">
-            <a class="optionToggle" href="index.html"><p>HOME</p></a>
-            <a class="optionToggle" href="about.html"><p>ABOUT</p></a>
-            <a class="optionToggle" href="product.html"><p>PRODUCTS</p></a>
-            <a class="optionToggle" href="contact.html"><p>CONTACT</p></a>
-        </div>
+      <div id="elementNavbar">
+        <ul id="logo">
+          <li>
+            <a href="index.html"
+              ><img
+                id="logoIMG"
+                src="img/MasterPage/Logo Gameboy.png"
+                alt="Logo GAME BOY"
+            /></a>
+          </li>
+        </ul>
+        <ul id="Menu">
+          <li>
+            <a href="index.html"><p>HOME</p></a>
+          </li>
+          <li>
+            <a href="about.html"><p>ABOUT</p></a>
+          </li>
+          <li>
+            <a href="product.html"><p>PRODUCTS</p></a>
+          </li>
+          <li>
+            <a href="contact.html"><p>CONTACT</p></a>
+          </li>
+        </ul>
+        <ul id="MenuCollapse">
+          <li>
+            <button id="SwitchButton" onclick="cambiarPropiedad()">
+              <i class="fa fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div id="toggleMenu">
+        <a class="optionToggle" href="index.html"><p>HOME</p></a>
+        <a class="optionToggle" href="about.html"><p>ABOUT</p></a>
+        <a class="optionToggle" href="product.html"><p>PRODUCTS</p></a>
+        <a class="optionToggle" href="contact.html"><p>CONTACT</p></a>
+      </div>
     </div>
-    <!-- <footer>
-        <p>© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</p>
-    </footer> -->
-</body>
-<script src="js/MasterPage.js"></script>
+
+    <!-- /////////////////////////////// // Principal Product /////////////////////////////// -->
+    <div id="slide">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/product/banner/Picture1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/product/banner/Picture2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/product/banner/Picture3.jpg" style="width: 100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div id="dotDiv">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <!-- /////////////////////////////// Games  /////////////////////////////// -->
+
+    <div class="sections gameslist">
+      <h1 class="titleProducto">Games</h1>
+      <br />
+      <div class="firstRow">
+        <div class="games">
+          <h3>Tetris</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/Tetris.jpg"
+            alt="Tetris"
+          />
+        </div>
+
+        <div class="games">
+          <h3>Super Mario Land</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/SuperMarioLand.jpg"
+            alt="SuperMarioLand"
+          />
+        </div>
+
+        <div class="games">
+          <h3>The Legend of Zelda</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/LegendOfZelda.jpg"
+            alt="The Legend of Zelda"
+          />
+        </div>
+
+        <div class="games">
+          <h3>Pokemon</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/PokemonBlue.jpg"
+            alt="Pokemon"
+          />
+        </div>
+
+        <div class="games">
+          <h3>Kirby's Dream Land</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/KirbysDreamLand.jpg"
+            alt="KirbyDreamLand"
+          />
+        </div>
+        <div class="games">
+          <h3>Donkey Kong</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/DonkeyKongLand.jpg"
+            alt="DonkeyKong"
+          />
+        </div>
+
+        <div class="games">
+          <h3>Metroid II</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/MetroidII.jpg"
+            alt="MetroidII"
+          />
+        </div>
+
+        <div class="games">
+          <h3>Dr. Mario</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/DrMario.jpg"
+            alt="DrMario"
+          />
+        </div>
+
+        <div class="games">
+          <h3>CastleVania</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/CastleVania.jpg"
+            alt="CastleVania"
+          />
+        </div>
+
+        <div class="games">
+          <h3>Wario Land</h3>
+          <br />
+          <img
+            class="gamesPhotos"
+            src="img/product/games/WarioLand.jpg"
+            alt="WarioLand"
+          />
+        </div>
+      </div>
+      <div class="secondRow"></div>
+    </div>
+
+    <!--/////////////////////////////// Accessories ///////////////////////////////-->
+
+    <div class="sections">
+      <h1 class="titleProducto">Accesories</h1>
+      <br />
+      <section id="accessoriesContainer">
+        <div class="container1">
+          <div class="image">
+            <img
+              class="accessoriesPhotos"
+              src="img/product/accessories/gamescase.jpg"
+              alt="pokemonCase"
+            />
+          </div>
+          <div class="informationAccesories">
+            <h3>Pokemon case for games</h3>
+            <p id="firstp">
+              Keep your Pokemon series Gameboy games safe and organized with
+              this exclusive case designed for true Pokemon trainers! This case
+              is made of durable materials and provides solid protection for
+              your game cartridges, ensuring they are safe from scratches, dust,
+              and accidental damage.
+            </p>
+            <p>
+              Multiple cartridge capacity: With the ability to store up to 12
+              Game Boy game cartridges, this case allows you to carry a wide
+              selection of your favorite Pokemon games with you.
+            </p>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="image">
+            <img
+              class="accessoriesPhotos"
+              src="img/product/accessories/holder.jpg"
+              alt="pokemonCase"
+            />
+          </div>
+          <div class="informationAccesories">
+            <h3>Tetris Game Boy Display Stand</h3>
+            <div class="parrafos">
+              <p id="firstp">
+                Show your love for the classic Game Boy Tetris game with this
+                elegant display stand. This stand is specifically designed to
+                highlight and showcase your Game Boy console while you play or
+                when you're not using it.
+              </p>
+              <p>
+                Perfect for display: When you're not playing, this display stand
+                is ideal for showcasing your Game Boy, adding a retro and
+                nostalgic touch to your gaming area or collection shelf.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="image">
+            <img
+              class="accessoriesPhotos"
+              src="https://now.estarland.com/images/products/78/25178/131143.jpg"
+            />
+          </div>
+          <div class="informationAccesories">
+            <h3>Handyboy</h3>
+            <div class="parrafos">
+              <p id="firstp">
+                The HandyBoy is an essential accessory for Game Boy enthusiasts
+                looking to take their gaming experience to the next level. This
+                multifunctional device is designed to provide comfort,
+                functionality, and versatility to Game Boy users.
+              </p>
+              <p>
+                Screen amplifier and built-in speaker: The HandyBoy features an
+                amplified screen that enhances the visibility of your Game Boy,
+                providing a more immersive gaming experience. Additionally, it
+                includes built-in speakers for improved audio quality, taking
+                the sound of your games to another level.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="image">
+            <img
+              class="accessoriesPhotos"
+              src="https://i.pinimg.com/originals/ac/d2/d3/acd2d3520e4da004538cb4da96bf6476.jpg"
+              alt="gbcamera"
+            />
+          </div>
+          <div class="informationAccesories">
+            <h3>Gameboy Camera</h3>
+            <div class="parrafos">
+              <p id="firstp">
+                The Game Boy Camera is an item that provides a unique
+                photography experience for Game Boy enthusiasts and collectors.
+                Designed as a fun and creative accessory for the console, this
+                compact camera offers a distinctive way of capturing moments.
+              </p>
+              <p>
+                Photo printing compatibility: You can print your photos using
+                the Game Boy Printer (sold separately), adding an extra touch of
+                authenticity to your digital memories by turning them into
+                tangible photographs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>
+        © Nintendo. Games are property of their respective owners. Nintendo of
+        America Inc. Headquarters are in Redmond, Washington, USA
+      </p>
+    </footer>
+  </body>
+  <script src="js/product.js"></script>
 </html>
