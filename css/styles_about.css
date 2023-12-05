@@ -3,17 +3,16 @@ body {
 }
 
 section {
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 #banner {
-    /* min-width: 2500px; */
-    height: 600px;
     width: 100%;
+    height: 400px;
     object-fit: cover;
 }
 
-.info-panel {
+#info-panel {
     width: 600px;
     padding: 2rem;
     margin-top: -5%;
@@ -27,30 +26,36 @@ section {
     -webkit-box-shadow: 0px 20px 0px 8px #585794;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1700px) {
     section {
-        margin-top: 15%;
+        margin-top: 12%;
     }
 
     #banner {
-        min-width: 1000px;
-        height: 300px;
         width: 100%;
+        height: 300px;
         object-fit: cover;
     }
 
-    .info-panel {
-        min-width: 600px;
-        width: 600px;
-        padding: 2rem;
-        margin-top: -5%;
+    #info-panel {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    section {
+        margin-top: 12%;
+    }
+
+    #banner {
+        width: 105%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #info-panel {
         margin-left: 30%;
-        position: relative;
-        border-radius: 10px;
-        color: rgb(72, 72, 72);
-        background: white !important;
-        box-shadow: 0px 20px 0px 8px #585794;
-        -webkit-box-shadow: 0px 20px 0px 8px #585794;
+        margin-bottom: 100px;
     }
 }
 
@@ -61,11 +66,13 @@ section {
     justify-content: center;
 }
 
-.timeline>ul {
+.timeline > ul {
     flex-direction: column;
+    margin-right: 5%;
 }
 
-.timeline>ul>p {
+
+.timeline > ul > p {
     height: 50px;
     padding: 5px;
     width: 450px;
@@ -80,13 +87,18 @@ section {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
-    margin-left: 6%;
+    margin-top: 5%;
+    margin-left: 32%;
+    margin-bottom: 5%;
+    min-width: 500px;
 }
 
 /* Hide the images by default */
 .mySlides {
+    min-width: 300px;
     display: none;
-    margin-right: 3%;
+    margin-left: -35%;
+    align-items: center;
 }
 
 /* Next & previous buttons */
@@ -105,15 +117,39 @@ section {
     border-radius: 3px 3px 3px 3px;
     user-select: none;
     -webkit-user-select: none;
-    margin-left: 12%;
+    margin-left: 9%;
     margin-right: 15%;
     opacity: .5;
 }
 
 /* Position the "next button" to the right */
+.prev {
+    left: -350px;
+    border-radius: 3px;
+}
+
+/* Position the "next button" to the right */
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 100px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1300px) {
+    .timeline > ul {
+        margin-right: 2%;
+    }
+
+    .prev {
+        left: -350px;
+    }
+
+    .next {
+        right: -10px;
+    }
+
+    .mySlides {
+        margin-left: -20%;
+    }
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -126,20 +162,6 @@ section {
     content: "";
     display: table;
     clear: both;
-}
-
-@media screen and (max-width: 1600px) {
-    .container {
-        margin-top: 5%;
-        margin-left: 35%;
-        margin-bottom: 5%;
-        min-width: 500px;
-    }
-
-    /* .prev,
-    .next {
-        display: none;
-    } */
 }
 
 #gameboyInfo {
@@ -173,8 +195,9 @@ section {
     border-bottom-right-radius: 10%;
 }
 
-@media screen and (max-width: 1600px) {
-    #gameboyInfo{
+@media screen and (max-width: 1300px) {
+    #gameboyInfo {
+        margin-top: 10%;
         margin-left: 12%;
         min-width: 500px;
     }
